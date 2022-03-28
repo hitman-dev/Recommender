@@ -78,7 +78,7 @@ def recommendsong(song):
 
     return recommended_song_names, recommended_song_posters
 
-path=""
+path="./"
 
 movieinfo = pd.read_parquet(
     f"{path}movieparquet/movie_info.parquet"
