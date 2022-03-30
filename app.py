@@ -192,7 +192,10 @@ if choice == "Movie":
                     )
                     html_str = f"""
                     <h4 style="text-align:center;text-decoration: underline;">{recommended_movie_names[counter]}</h4>
-                    <h5>Overview:</h5> <p>{overview}</p> 
+                    <details>
+                        <summary  style="font-size:18px;font-weight:bold">👉 Overview:</summary>
+                        <p>{overview}</p>
+                    </details>  
                     <h5>Genres:</h5> <p>{genres}</p>
                     <h5>Cast:</h5> <p>{cast}</p> 
                     <h5>Director:</h5> <p>{crew}</p> 
@@ -211,7 +214,10 @@ if choice == "Movie":
                     )
                     html_str = f"""
                     <h4 style="text-align:center;text-decoration: underline;">{recommended_movie_names[counter]}</h4>
-                    <h5>Overview:</h5> <p>{overview}</p> 
+                    <details>
+                        <summary  style="font-size:18px;font-weight:bold">👉 Overview:</summary>
+                        <p>{overview}</p>
+                    </details> 
                     <h5>Genres:</h5> <p>{genres}</p>
                     <h5>Cast:</h5> <p>{cast}</p> 
                     <h5>Director:</h5> <p>{crew}</p> 
@@ -248,7 +254,10 @@ elif choice == "Books":
                     <h5>Genres:</h5> <p>{genres}</p> 
                     <h5>Language:</h5> <p>{language}</p> 
                     <h5>Rating:</h5> <p style="font-size:26px;color:rgb(4, 217, 255)">{rating}</p> 
-                    <h5>description:</h5> <p>{description}</p>
+                    <details>
+                        <summary  style="font-size:18px;font-weight:bold">👉 Description:</summary>
+                        <p>{description}</p>
+                    </details>
                     """
                     st.markdown(html_str, unsafe_allow_html=True)
             counter += 1
@@ -274,7 +283,10 @@ elif choice == "Books":
                     <h5>Genres:</h5> <p>{genres}</p> 
                     <h5>Language:</h5> <p>{language}</p> 
                     <h5>Rating:</h5> <p style="font-size:26px;color:rgb(4, 217, 255)">{rating}</p> 
-                    <h5>description:</h5> <p>{description}</p> 
+                    <details>
+                        <summary  style="font-size:18px;font-weight:bold">👉 Description:</summary>
+                        <p>{description}</p>
+                    </details>
                     """
                     st.markdown(html_str, unsafe_allow_html=True)
             counter += 1
@@ -305,7 +317,10 @@ elif choice == "Songs":
                     <h5>Playlist:</h5> <p>{playlist}</p>
                     <h5>Genres:</h5> <p>{genres}</p> 
                     <h5>Popularity:</h5> <p style="font-size:26px;color:rgb(4, 217, 255)">{popularity}</p> 
-                    <h5>Lyrics:</h5> <p>{lyrics}</p> 
+                    <details>
+                        <summary  style="font-size:18px;font-weight:bold">👉 Lyrics:</summary>
+                        <p>{lyrics}</p>
+                    </details> 
                     """
                     st.markdown(html_str, unsafe_allow_html=True)
             counter += 1
@@ -329,9 +344,16 @@ elif choice == "Songs":
                     <h5>Playlist:</h5> <p>{playlist}</p>
                     <h5>Genres:</h5> <p>{genres}</p> 
                     <h5>Popularity:</h5> <p style="font-size:26px;color:rgb(4, 217, 255)">{popularity}</p> 
-                    <h5>Lyrics:</h5> <p>{lyrics}</p> 
+                    <details>
+                        <summary  style="font-size:18px;font-weight:bold">👉 Lyrics:</summary>
+                        <p>{lyrics}</p>
+                    </details> 
                     """
                     st.markdown(html_str, unsafe_allow_html=True)
             counter += 1
 else:
     st.subheader("About")
+    st.write('''
+    This is a Recommender App ,which Recommends Movies, Books and Songs based on the user input.
+    This app also gives information about the movies, books and songs recommended.
+    ''')
