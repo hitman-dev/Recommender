@@ -11,6 +11,14 @@ The recommender system deals with a large volume of information present by filte
 In this project ,I have designed a recommendation system that recommends MOVIES, SONGS and BOOKS based on the input given by the user.
 This system also shows Details of the recommended output .
 
+### Datasets Used
+
+Below are the links used to train the Recommender model
+
+Movie dataset :- 'https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata'
+Book dataset :- 'https://zenodo.org/record/4265096'
+Song dataset :- 'https://www.kaggle.com/datasets/saurabhshahane/spotgen-music-dataset'
+
 ### Deployment 
 This app can be deployed on Heroku Cloud and also Streamlit Cloud , this repo contains all the necessary files for deployment
 
