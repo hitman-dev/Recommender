@@ -11,7 +11,7 @@ Recommender systems are the systems that are designed to recommend things to the
 The recommender system deals with a large volume of information present by filtering the most important information based on the data provided by a user and other factors that take care of the user’s preference and interest. It finds out the match between user and item and imputes the similarities between users and items for recommendation. 
 
 ### Project overview
-In this project ,I have designed a recommendation system that recommends MOVIES, SONGS and BOOKS based on the input given by the user.
+In this project ,we have designed a recommendation system that recommends MOVIES, SONGS and BOOKS based on the input given by the user, this is a contenct based recommendation system.
 This system also shows Details of the recommended output .In this system the recommender is made by using Cosine Similarity function
 
 ### Datasets Used
