@@ -8,7 +8,8 @@
 
 # Recommender
 
-A web App deployed on HEROKU CLOUD/Strealit CLoud ,that recommends MOVIES, SONGS and BOOKS
+A web App deployed on HEROKU CLOUD/Strealit CLoud ,that recommends MOVIES, SONGS and BOOKS.
+
 You can try out this app [here.](https://share.streamlit.io/hitman-dev/recommender/main/app.py)
 
 ![Screenshot](images/UI_info.JPG)
