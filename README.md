@@ -43,3 +43,8 @@ In Python the cosine similarity measures the similarity between vector lists by 
 
 You can get more information about cosine Similarity [here.](https://www.delftstack.com/howto/python/cosine-similarity-between-lists-python/#use-the-scipy-module-to-calculate-the-cosine-similarity-between-two-lists-in-python)
 
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+cv = CountVectorizer(stop_words='english')
+vector = cv.fit_transform(new['tags']).toarray()
+```
