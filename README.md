@@ -1,3 +1,5 @@
+[![Build With](https://img.shields.io/badge/%F0%9F%90%8D-Python-green)](https://www.python.org/downloads/release/python-380/)
+
 # Recommender
 
 A web App deployed on HEROKU CLOUD/Strealit CLoud ,that recommends MOVIES, SONGS and BOOKS
