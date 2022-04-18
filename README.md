@@ -48,3 +48,18 @@ from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer(stop_words='english')
 vector = cv.fit_transform(new['tags']).toarray()
 ```
+
+```python
+from sklearn.metrics.pairwise import cosine_similarity
+
+similarity = cosine_similarity(vector)
+similarity
+```
+
+```python
+def recommend(movie):
+    index = new[new['title'] == movie].index[0]
+    distances = sorted(list(enumerate(similarity[index])),reverse=True,key = lambda x: x[1])
+    for i in distances[1:7]:
+        print(new.iloc[i[0]].title)
+```
