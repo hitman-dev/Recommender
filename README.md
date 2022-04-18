@@ -87,7 +87,7 @@ The app also shows respective details based on the recommended output.
 The app also has feature to change its Theme , we can select white theme or dark theme or device oriented theme
 ![Screenshot](images/theme.JPG)
 
- # Collebration 
+ # Collaboration 
  This project is collaborative work of:-
  
 #### Hitesh Chaudhari
